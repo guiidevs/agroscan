@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroScan - Painel de Controle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/972f86d94b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <i id="perfil" class="fa-solid fa-user"></i>
+    <div id="nav_perfil">
+        <label style="margin-bottom: 30px;" for=""><i class="fa-regular fa-address-card"></i> Amanda Dos Santos</label>
+        <label for=""><i class="fa-solid fa-cart-shopping"></i> Comprar mais dispositivos</label>
+        <label for=""><i class="fa-solid fa-microchip"></i> Meus dispositivos</label>
+        <label for=""><i class="fa-solid fa-bell"></i> Personalizar Notificações</label>
+        <label for=""><i class="fa-solid fa-headset"></i> Ajuda</label>
+        <label for=""><i class="fa-solid fa-gear"></i> Configurações</label>
+        <label style="margin-top: 30px; color: maroon;" for=""><i style="color: maroon;" class="fa-solid fa-right-from-bracket"></i> Sair</label>
+    </div>
+    <img src="assets/logo.png" alt="">
+    <div id="hamb" class="hamburguer">
+        <div id="bar1" class="bar"></div>
+        <div class="bar"></div>
+        <div id="bar2" class="bar"></div>
+    </div>
+    <ul id="nav">
+        <li>Inicio</li>
+        <li>Sobre Nós</li>
+        <li>Indicações de Fertilizantes</li>
+    </ul>
+</header>
+    <div class="app">
+    <div class="container">
+        <h1 id="titulo">Painel de Monitoramento</h1>
+        <div class="dispositivos">
+            <fieldset><legend>Informações dos dispositivos</legend>
+                <label for="">Dispositivos: 14</label>
+                <label for="">Online: 13</label>
+                <label for="">Offline: 1</label>
+                <label for="">Precisando de manutenção: 0</label>
+            </fieldset>
+        </div>
+        <main>
+            <div class="list-item">
+                <div class="titulo">
+                    Monitor de Solo
+                </div>
+                <div class="item">
+                    <label>Nivel de PH <input id="int_ph" type="text">%</label>
+                    <input id="ph" type="range" name="" id="" min="0" max="100" value="55">
+                </div>
+                <div class="item">
+                    <label>Nivel de Umidade <input id="int_umidade" type="text">%</label>
+                    <input id="umidade" type="range" name="" id="" min="0" max="100" value="25">
+
+                </div>
+                <div class="item">
+                    <label>Teor de nutrientes <input id="int_nutrientes" type="text">%</label>
+                    <input id="nutrientes" type="range" name="" id="" min="0" max="100" value="57">
+
+                </div>
+                <div class="item">
+                    <label>Residuos de pesticidas <input id="int_pesticidas" type="text">%</label>
+                    <input id="pesticidas" type="range" name="" id="" min="0" max="100" value="10">
+
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="titulo">
+                    Monitor de Ar
+                </div>
+                <div class="item">
+                    <label>Nivel de Dioxido de Carbono (CO2) <input id="int_carbono" type="text">%</label>
+                    <input id="carbono" type="range" name="" id="" min="0" max="100" value="46">
+                </div>
+                <div class="item">
+                    <label>Nivel de Oxido Nitroso (N<label for="">2</label>O) <input id="int_nitroso" type="text">%</label>
+                    <input id="nitroso" type="range" name="" id="" min="0" max="100" value="75">
+
+                </div>
+                <div class="item">
+                    <label>Nivel de Outros Poluentes <input id="int_poluentes" type="text">%</label>
+                    <input id="poluentes" type="range" name="" id="" min="0" max="100" value="30">
+                </div>
+            </div>
+        </main>
+    </div>
+    </div>
+    <footer>
+        <span>&copy;Todos os direitos reservado a AgroScan.</span>
+    </footer>
+</body>
+</html>
